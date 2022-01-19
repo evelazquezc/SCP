@@ -1,5 +1,5 @@
 <resources>
-    <string name="ws_url">http://%s/WS_CP.asmx</string> <!--WS de pruebas local-->
+    <string name="ws_url">http://%s/WS_CP.asmx</string> <!--WS pruebas local-->
     <!--<string name="ws_url">http://%s/WS_CP/WS_CP.asmx</string>-->
     <string name="ws_ns">http://web.asezor.com/</string>
     <string name="ws_to">300000</string> <!-- 1min = 60000 -->
