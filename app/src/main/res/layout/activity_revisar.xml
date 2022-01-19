@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RevisarActivity"
+    android:background="@color/backgroundDefault"
+    >
+
+    <include layout="@layout/actionbar_toolbar" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/paddingGeneral"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/ly_informacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_caja"
+                    android:textSize="@dimen/textInformacion"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    >
+                </TextView>
+                <TextView
+                    android:id="@+id/tv_caja"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ejemplo"
+                    android:textSize="@dimen/textInformacion"
+                    android:textStyle="normal"
+                    android:textAlignment="textEnd"
+                    android:layout_weight="1"
+                    android:paddingEnd="@dimen/paddingGeneral"
+                    >
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_transaccion"
+                    android:textSize="@dimen/textInformacion"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:paddingStart="@dimen/paddingGeneral"
+                    >
+                </TextView>
+                <TextView
+                    android:id="@+id/tv_codigo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ejemplo"
+                    android:textSize="@dimen/textInformacion"
+                    android:textStyle="normal"
+                    android:textAlignment="textEnd"
+                    android:layout_weight="1"
+                    >
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_hora"
+                    android:textSize="@dimen/textInformacion"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    >
+                </TextView>
+                <TextView
+                    android:id="@+id/tv_hora"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ejemplo"
+                    android:textSize="@dimen/textInformacion"
+                    android:textStyle="normal"
+                    android:textAlignment="textEnd"
+                    android:layout_weight="1"
+                    android:paddingEnd="@dimen/paddingGeneral"
+                    >
+                </TextView>
+                <TextView
+                    android:id="@+id/t1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_importe"
+                    android:textSize="@dimen/textInformacion"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:paddingStart="@dimen/paddingGeneral"
+                    >
+                </TextView>
+                <TextView
+                    android:id="@+id/tv_cantidad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ejemplo"
+                    android:textSize="@dimen/textInformacion"
+                    android:textStyle="normal"
+                    android:textAlignment="textEnd"
+                    android:layout_weight="1"
+                    >
+                </TextView>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/red_700"
+                android:layout_marginTop="@dimen/paddingControles"
+                android:layout_marginBottom="@dimen/paddingControles"
+                app:layout_constraintTop_toBottomOf="@id/t1"
+                />
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mainRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@id/ly_informacion"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            >
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBarCircle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:visibility="gone"
+        android:theme="@style/ProgressRed"
+        android:padding="150dp"
+        android:background="@color/transparent"
+        />
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    style="@style/CardView.Light"
+    tools:ignore="ContentDescription"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="3dp"
+    android:layout_marginBottom="@dimen/paddingGeneral"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cl_ticket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/paddingCardView"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+
+            >
+
+            <ImageView
+                android:id="@+id/avatar_image"
+                android:layout_width="32dp"
+                android:layout_height="48dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/ic_ticket"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_chainStyle="packed"
+                />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintStart_toEndOf="@id/avatar_image"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="@dimen/paddingControles"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="6"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_caja"
+                        android:textSize="@dimen/textCardView"
+                        android:layout_weight="4"
+                        />
+
+                    <TextView
+                        android:id="@+id/cv_caja"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ejemplo"
+                        android:textSize="@dimen/textCardView"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:layout_weight="2"
+                        android:textAlignment="textEnd"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="6"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_transaccion"
+                        android:textSize="@dimen/textCardView"
+                        android:layout_weight="4"
+                        />
+
+                    <TextView
+                        android:id="@+id/cv_codigo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ejemplo"
+                        android:textSize="@dimen/textCardView"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:layout_weight="2"
+                        android:textAlignment="textEnd"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="6"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_hora"
+                        android:textSize="@dimen/textCardView"
+                        android:layout_weight="4"
+                        />
+
+                    <TextView
+                        android:id="@+id/cv_hora"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ejemplo"
+                        android:textSize="@dimen/textCardView"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:layout_weight="2"
+                        android:textAlignment="textEnd"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="6"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_importe"
+                        android:textSize="@dimen/textCardView"
+                        android:layout_weight="4"
+                        />
+
+                    <TextView
+                        android:id="@+id/cv_cantidad"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ejemplo"
+                        android:textSize="@dimen/textCardViewMax"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:layout_weight="2"
+                        android:textAlignment="textEnd"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_identificador"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@color/green"
+            >
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

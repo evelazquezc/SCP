@@ -1,0 +1,14 @@
+<resources>
+    <dimen name="textSize">18sp</dimen>
+    <dimen name="textInformacion">16sp</dimen>
+    <dimen name="textCardView">16sp</dimen>
+    <dimen name="textCardViewMax">18sp</dimen>
+    <dimen name="textCodigo">14sp</dimen>
+
+    <dimen name="paddingLogin">25dp</dimen>
+    <dimen name="paddingControles">8dp</dimen>
+    <dimen name="paddingGeneral">12dp</dimen>
+    <dimen name="paddingCardView">5dp</dimen>
+    <dimen name="paddingBottomCardView">2dp</dimen>
+
+</resources>
