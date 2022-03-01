@@ -1,9 +1,9 @@
 <resources>
-    <string name="ws_url">http://%s/WS_CP.asmx</string> <!--WS pruebas local-->
-    <!--<string name="ws_url">http://%s/WS_CP/WS_CP.asmx</string>-->
+    <string name="ws_url">https://web.asezor.com/%s/WS_Etiquetado/WS_Etiquetado.asmx</string> <!--WS pruebas server-->
+    <!--<string name="ws_url">https://web.asezor.com/PruebasDesa/WS_Etiquetado/WS_Etiquetado.asmx</string>--> <!--WS pruebas local-->
+    <!--<string name="ws_url">http://%s/WS_Etiquetado/WS_Etiquetado.asmx</string>-->
     <string name="ws_ns">http://web.asezor.com/</string>
-    <string name="ws_to">300000</string> <!-- 1min = 60000 -->
+    <string name="ws_to">30000</string> <!-- 1min = 60000 -->
     <string name="ws_key">zfY4drR7p51ZBCV,OaMLiN^aBPVkjoq^u@m7cbZQ2c0@jA9@ZPFWKm</string>
     <string name="baseLocal">baseLocal.db</string>
-    <string name="baseCodigos">baseCodigos.db</string>
 </resources>

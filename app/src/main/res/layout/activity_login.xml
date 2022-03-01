@@ -27,8 +27,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:background="@drawable/logo_zorro"
+                android:adjustViewBounds="true"
+                android:src="@drawable/logo_etiquetas"
                 android:contentDescription="@string/contentDes"
+                android:padding="@dimen/paddingLogin"
+                android:layout_margin="@dimen/paddingLogin"
                 >
             </ImageView>
 
